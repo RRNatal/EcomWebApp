@@ -18,7 +18,7 @@ namespace Ecom.Models
         public string Image { get; set; }
         [Range(1,1000,ErrorMessage = "Price should be between $1 and $1000")]
         public double Price { get; set; }
-        [Display(Name ="Food Type")]
+        [Display(Name ="Main Category")]
         public int MainCatId{ get; set; }
         [ForeignKey("MainCatId")]
         public MainCat MainCat { get; set; }

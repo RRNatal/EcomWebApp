@@ -39,7 +39,7 @@ namespace Ecom.DataAccess.Repository
             }
             if (includeProperties != null)
             {
-                //abc,,xyz -> abc xyz
+                
                 foreach(var includeProperty in includeProperties.Split(
                     new char[] { ','}, StringSplitOptions.RemoveEmptyEntries))
                 {
@@ -62,7 +62,7 @@ namespace Ecom.DataAccess.Repository
             }
             if (includeProperties != null)
             {
-                //abc,,xyz -> abc xyz
+                
                 foreach (var includeProperty in includeProperties.Split(
                     new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {

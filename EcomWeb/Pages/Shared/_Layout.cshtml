@@ -26,28 +26,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link fs-6" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         @if (User.IsInRole(SD.ManagerRole) || User.IsInRole(SD.FrontDeskRole))
                         {
                             <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-page="/Admin/Order/OrderList">Order List</a>
+                                <a class="nav-link fs-6" asp-area="" asp-page="/Admin/Order/OrderList">Order List</a>
                             </li>
                         }
                         @if (User.IsInRole(SD.ManagerRole) || User.IsInRole(SD.KitchenRole))
                         {
                             <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-page="/Admin/Order/ManageOrder">Manage Order</a>
+                                <a class="nav-link fs-6" asp-area="" asp-page="/Admin/Order/ManageOrder">Manage Order</a>
                             </li>
                         }
                         @if (User.IsInRole(SD.ManagerRole))
                         {
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                                <a class="nav-link dropdown-toggle fs-6" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" asp-area="" asp-page="/Admin/Categories/Index">Categories</a>
-                                    <a class="dropdown-item" asp-area="" asp-page="/Admin/MainCats/Index">Food Types</a>
-                                    <a class="dropdown-item" asp-area="" asp-page="/Admin/MenuItems/Index">Menu Items</a>
+                                    <a class="dropdown-item" asp-area="" asp-page="/Admin/MainCats/Index">Main Categories</a>
+                                    <a class="dropdown-item" asp-area="" asp-page="/Admin/MenuItems/Index">Products</a>
 
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Register Employee</a>
@@ -75,7 +75,7 @@
 
     <footer class="footer text-muted bg-primary">
         <div class="container">
-            &copy; 2021 - EcomWeb
+            &copy; @DateTime.Now.Year - EcomWeb
         </div>
     </footer>
 

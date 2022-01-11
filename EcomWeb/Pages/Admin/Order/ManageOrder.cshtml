@@ -32,7 +32,7 @@
                             {
                                 <button type="submit" class="btn btn-primary form-control mb-3" 
                                 asp-page-handler="OrderInProcess" asp-route-orderId="@item.OrderHeader.Id">
-                                    <i class="bi bi-check-square"></i> &nbsp; Start Cooking
+                                    <i class="bi bi-check-square"></i> &nbsp; Start Process
                                 </button>
                             }
                             @if (item.OrderHeader.Status == SD.StatusInProcess)

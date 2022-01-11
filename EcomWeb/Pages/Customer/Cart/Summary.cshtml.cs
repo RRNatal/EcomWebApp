@@ -83,7 +83,7 @@ namespace EcomWeb.Pages.Customer.Cart
                 _unitOfWork.Save();
 
 
-                 var domain = "https://localhost:44322/";
+                 var domain = "https://localhost:7297/";
                 var options = new SessionCreateOptions
                 {
                     LineItems = new List<SessionLineItemOptions>()
@@ -104,7 +104,7 @@ namespace EcomWeb.Pages.Customer.Cart
                     {
                         PriceData = new SessionLineItemPriceDataOptions
                         {
-                            //7.99->799
+                            
                             UnitAmount = (long)(item.MenuItem.Price * 100),
                             Currency = "usd",
                             ProductData = new SessionLineItemPriceDataProductDataOptions

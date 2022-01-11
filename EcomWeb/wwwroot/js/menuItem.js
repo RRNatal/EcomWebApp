@@ -10,7 +10,7 @@ $(document).ready(function () {
             { "data": "name", "width": "25%" },
             { "data": "price", "width": "15%" },
             { "data": "category.name", "width": "15%" },
-            { "data": "MainCat.name", "width": "15%" },
+            { "data": "mainCat.name", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {

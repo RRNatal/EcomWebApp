@@ -7,7 +7,7 @@
 		<div class="row pb-2">
 			<div class="col-9">
 				<h2 class="text-primary pl-3">
-					@(Model.MenuItem.Id!=0 ? "Update" : "Create") Menu Item
+					@(Model.MenuItem.Id!=0 ? "Update" : "Create") Product
 				</h2>
 				<hr />
 
@@ -43,7 +43,7 @@
 				<div class="mb-3">
 					<label asp-for="MenuItem.MainCatId"></label>
 					<select asp-for="MenuItem.MainCatId" asp-items="Model.MainCatList" class="form-select">
-						<option disabled selected>-Select Food Type-</option>
+						<option disabled selected>-Select Main Category-</option>
 					</select>
 
 					<span asp-validation-for="MenuItem.MainCatId" class="text-danger"></span>
